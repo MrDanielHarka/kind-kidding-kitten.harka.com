@@ -350,7 +350,14 @@ function cat(canvas) {
     scared: new Animation(9, 8),
   };
 
-  const spritesheet = new Spritesheet(256, 320, 8, 10, animations, 'kkk.png');
+  const spritesheet = new Spritesheet(
+    256,
+    320,
+    8,
+    10,
+    animations,
+    'https://kind-kidding-kitten.harka.com/kkk.png'
+  );
   const cat = new Cat(spritesheet, canvas);
 
   spritesheet.load(() => {
